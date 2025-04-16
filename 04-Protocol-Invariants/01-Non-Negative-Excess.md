@@ -27,7 +27,7 @@ The non-negative excess credit invariant serves several crucial purposes:
 
 1. **Credit LP Protection**: It ensures that borrowers reserve the credit required, which protects Credit LPs from losing more than they should in external liquidation scenarios.
 
-2. **External Liquidation Prevention**: By preventing sufficient credit reservation, it maintains sufficient collateralization to avoid unexpected external liquidations.
+2. **External Liquidation Prevention**: By ensuring sufficient credit reservation, it maintains sufficient collateralization to avoid unexpected external liquidations.
 
 3. **Protocol Stability**: It helps maintain the mathematical relationships that power Twyne's design, ensuring the entire system operates as intended.
 
