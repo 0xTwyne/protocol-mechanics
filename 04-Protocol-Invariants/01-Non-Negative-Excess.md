@@ -25,15 +25,15 @@ Where:
 
 The non-negative excess credit invariant serves several crucial purposes:
 
-1. **Credit LP Protection**: It ensures that borrowers don't reserve more credit than they should, which protects Credit LPs from losing more than they should in liquidation scenarios.
+1. **Credit LP Protection**: It ensures that borrowers reserve the credit required, which protects Credit LPs from losing more than they should in external liquidation scenarios.
 
-2. **External Liquidation Prevention**: By preventing excessive credit reservation, it maintains sufficient collateralization to avoid unexpected external liquidations.
+2. **External Liquidation Prevention**: By preventing sufficient credit reservation, it maintains sufficient collateralization to avoid unexpected external liquidations.
 
 3. **Protocol Stability**: It helps maintain the mathematical relationships that power Twyne's design, ensuring the entire system operates as intended.
 
-4. **Market Fairness**: It prevents borrowers from gaining unfair advantages by manipulating the credit reservation process.
+4. **Borrower Experience**: It helps guarantee that Borrowers receive the liquidation LTV of their choosing.
 
-If this invariant were violated, borrowers could potentially extract more value from the system than designed, putting Credit LPs' funds at risk and destabilizing the protocol.
+If this invariant were violated, borrowers could potentially get liquidated on the underlying lending market before they are signalled as liquidatable on Twyne, this indirectly would also put Credit LPs' funds at risk and destabilizing the protocol.
 
 ## Mathematical Derivation
 
